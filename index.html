@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js\java.js" defer></script>
+</head>
+
+<body>
+  <div class="container">
+    <nav class="navbar">
+      <div class="navbar__logo">
+        <img src="img\иконка.png" alt="logo">
+      </div>
+      <ul class="navbar__menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#slider">Slider</a></li>
+        <li><a href="#tabs">Tabs</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <div class="navbar__burger">
+        <div class="burger">
+          <div class="burger__line"></div>
+          <div class="burger__line"></div>
+          <div class="burger__line"></div>
+        </div>
+        <ul class="navbar__menu-items">
+          <li><a href="#">Home</a></li>
+          <li><a href="#slider">Slider</a></li>
+          <li><a href="#tabs">Tabs</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <section class="slider" id="slider">
+      <div class="slider-container">
+        <div class="slider__item fade">
+          <div class="slider__content">
+            <div class="slider__text">
+              <h2>Decorate your home with a <span data-target="accordion1">variety of flowers</span></h2>
+              <p>Flowers present a seemingly endless variety of combinations. They range in size from minute blossoms
+                to
+                giant blooms. In some plants, such as poppy, magnolia, tulip, and petunia, each flower is relatively
+                large.
+              </p>
+              <button class="slider__button">Read More</button>
+            </div>
+            <img src="img\slider1.png" alt="Slide 1">
+          </div>
+        </div>
+        <div class="slider__item fade">
+          <div class="slider__content">
+            <div class="slider__text">
+              <h2>Think’s important <span data-target="accordion2">Flowers in your area</span></h2>
+              <p>People have been using natural objects, such as tree stumps, rocks and moss, as furniture since
+                thebeginning of human civilisation. </p>
+              <button class="slider__button">Read More</button>
+            </div>
+            <img src="img\slider2.png" alt="Slide 2">
+          </div>
+        </div>
+        <div class="slider__item fade">
+          <div class="slider__content">
+            <div class="slider__text">
+              <h2>Let’s try to campaign flowers <span data-target="accordion3">decoration in your home</span></h2>
+              <p>Flowers present a seemingly endless variety of combinations. They range in size from minute blossoms
+                to
+                giant blooms. In some plants, such as poppy, magnolia, tulip, and petunia, each flower is relatively
+                large.
+              </p>
+              <button class="slider__button">Read More</button>
+            </div>
+            <img src="img\slider3.png" alt="Slide 3">
+          </div>
+        </div>
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+    </section>
+
+    <section class="tabs" id="tabs">
+      <h2>More Value from <span>these Flowers</span></h2>
+      <nav class="tab">
+        <ul class="tab__menu">
+          <li class="tab__item"><a href="#special-deals" class="tab__link">Special Deals</a></li>
+          <li class="tab__item"><a href="#popular" class="tab__link">Popular</a></li>
+          <li class="tab__item"><a href="#recommendation" class="tab__link">Recommendation</a></li>
+          <li class="tab__item"><a href="#best-price" class="tab__link">Best Price</a></li>
+        </ul>
+      </nav>
+
+      <div class="tab__content">
+        <div id="special-deals" class="tab__pane tab__pane--special-deals">
+          <ul class="flower-list">
+            <li>
+              <img src="img\flower1.png" alt="Flower 1">
+              <h3>Jasmine Flowers</h3>
+              <p>$258</p>
+            </li>
+            <li>
+              <img src="img/flower2.png" alt="Flower 2">
+              <h3>Lily Flowers</h3>
+              <p>$310</p>
+            </li>
+            <li>
+              <img src="img/flower3.png" alt="Flower 3">
+              <h3>Rose Flowers</h3>
+              <p>$114</p>
+            </li>
+          </ul>
+        </div>
+        <div id="popular" class="tab__pane tab__pane--popular">
+          <ul class="flower-list">
+            <li>
+              <img src="img/flower4.png" alt="Flower 4">
+              <h3>Amaris Flowers</h3>
+              <p>$410</p>
+            </li>
+            <li>
+              <img src="img/flower5.png" alt="Flower 5">
+              <h3>CLoir Flowers</h3>
+              <p>$219</p>
+            </li>
+            <li>
+              <img src="img/flower6.png" alt="Flower 6">
+              <h3>Adalgencia Flowers</h3>
+              <p>$87</p>
+            </li>
+          </ul>
+        </div>
+        <div id="recommendation" class="tab__pane tab__pane--recommendation">
+          <ul class="flower-list">
+            <li>
+              <img src="img/flower7.png" alt="Flower 7">
+              <h3>Abacus Flowers</h3>
+              <p>$213</p>
+            </li>
+            <li>
+              <img src="img/flower8.png" alt="Flower 8">
+              <h3>Xelout Flowers</h3>
+              <p>$514</p>
+            </li>
+            <li>
+              <img src="img/flower6.png" alt="Flower 6">
+              <h3>Adalgencia Flowers</h3>
+              <p>$87</p>
+            </li>
+          </ul>
+        </div>
+        <div id="best-price" class="tab__pane tab__pane--best-price">
+          <ul class="flower-list">
+            <li>
+              <img src="img/flower3.png" alt="Flower 3">
+              <h3>Rose Flowers</h3>
+              <p>$114</p>
+            </li>
+            <li>
+              <img src="img/flower5.png" alt="Flower 5">
+              <h3>CLoir Flowers</h3>
+              <p>$219</p>
+        </div>
+        <div class="modal">
+          <div class="modal__content">
+            <button class="modal__close">&times;</button>
+            <h2>Flowers most suited for a home</h2>
+            <ul>
+              <li>
+                Bamboo Plant
+              </li>
+              <li>Neem Tree</li>
+              <li>Money Plant</li>
+              <li>Lavender Plant</li>
+              <li>Peace Lily</li>
+              <li>Snake Plant</li>
+              <li>Basil (Tulsi)</li>
+              <li>Ashoka Tree</li>
+            </ul>
+          </div>
+        </div>
+</body>
+
+</html>
